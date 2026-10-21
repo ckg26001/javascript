@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function judge1(){
+
+        }
+
+        function judge2(){
+            var item = document.getElementById("data").value;
+            if ( iten == "男"){
+                alert( "男です" );
+            }else {
+                alert( "男以外です" );
+            }
+            if( item !="男"){
+                alert( "男以外です" );
+            }else {
+                alert( "男です" );
+            }
+        }
+
+        function judge3(){
+            var item1 = document.getElementById("data").value;
+            var item2 = document.getElementById("type").value;
+            if ( item1 >= 20 && item2 == "社会人"){
+                    alert( "公営競技:OK" );
+                }else{
+                    alert( "公営競技:NG" )
+            }
+        }
+    </script>
+</head>
+<body>
+    年齢:<input type="text" id="data"><br>
+    学生:<input type="text" id="type"><br>
+    <button onclick="judge1()">50より大きいかの確認</button>
+    <button onclick="judge2()">「男」チェック</button>
+    <button onclick="judge3()">公営競技ができるかの確認</button>
+</body>
+</html>
